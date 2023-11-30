@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background: white(54, 180, 54) ;
+}
+.heading { 
+    justify-content: center;
+    text-align: center;
+}
+.heading h2 {
+    font-size: 50px;
+    color: green;
+    margin-bottom: 60px;
+}
+
+.about {
+    align-items: center;
+    display: flex;
+    width: 85%;
+    margin: auto;
+}
+.about img {
+    max-width: 50%;
+    height: auto;
+}
+.permbajtja {
+    padding: 20px;
+}
+.permbajtja h4 {
+     color:black;
+}
+.permbajtja p {
+    color: black;
+    font-size: 18px;
+    line-height: 1;
+    margin: 15px 0px;
+}
+.buttoni {
+    background-color:rgb(12, 116, 28);
+    color: black;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+    margin: 12px 20px;
+    font-size: 18px;
+    padding: 8px;
+    transition: 0.4s ease;
+}
+.buttoni:hover {
+    background-color: rgb(48, 168, 74);
+}
