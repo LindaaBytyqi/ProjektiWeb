@@ -5,16 +5,12 @@
     font-family: 'Arial', sans-serif;
 }
 body {
-    background: white(54, 180, 54) ;
-}
-.heading {
-    justify-content: center;
-    text-align: center;
+    background: rgb(210, 227, 182) ;
 }
 .heading-u {
     font-size: 35px;
-    color: green;
-    margin-bottom: 20px;
+    color: olive;
+    margin-bottom: 30px;
     padding: 30px;
     text-align: center;
 }
@@ -37,12 +33,12 @@ body {
     max-width: 600px;
 }
 .permbajtja h4 {
-     color: olive;
+     color: rgb(109, 109, 19);
      font-size: 1.5em;
      margin-bottom: 10px;
 }
 .permbajtja p {
-    color: black;
+    color: rgb(47, 67, 12);
     font-size: 1em;
     line-height: 1.6;
     margin: 15px 5px;
@@ -53,11 +49,37 @@ body {
     border: none;
     border-radius: 3.5px;
     cursor: pointer;
-    margin: 12px 20px;
+    margin: 5px 10px;
     font-size: 18px;
-    padding: 8px;
-    transition: 0.4s ease;
+    padding: 12px;
+    transition: background-color 0.4s ease;
 }
 .buttoni:hover {
     background-color: rgb(48, 168, 74);
+}
+
+.buttoni::after {
+    content: "▶";
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .permbajtja {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .heading-u {
+        font-size: 37.5px;
+        margin-top: 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
 }
