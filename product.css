@@ -14,6 +14,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+header {
+    background-color: rgb(183, 136, 173);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
 .product {
     width: 250px;
@@ -21,7 +27,7 @@ body {
     margin: 30px 0;
     padding: 30px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease;
@@ -35,17 +41,19 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 h4 {
     color: black;
+    margin-block: 10px;
 }
 p {
     color: #666;
+    margin-top: 10px;
 }
 
 .price {
     color: #e74c3c;
     font-weight: bold;
-    margin-top: 10px;
+    
 }
