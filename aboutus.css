@@ -2,42 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
 }
 body {
     background: white(54, 180, 54) ;
 }
-.heading { 
+.heading {
     justify-content: center;
     text-align: center;
 }
-.heading h2 {
-    font-size: 50px;
+.heading-u {
+    font-size: 35px;
     color: green;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    padding: 30px;
+    text-align: center;
 }
 
 .about {
     align-items: center;
     display: flex;
+    justify-content: space-around;
     width: 85%;
     margin: auto;
+    padding: 15px;
 }
 .about img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 .permbajtja {
-    padding: 20px;
+    padding: 25px;
+    max-width: 600px;
 }
 .permbajtja h4 {
-     color:black;
+     color: olive;
+     font-size: 1.5em;
+     margin-bottom: 10px;
 }
 .permbajtja p {
     color: black;
-    font-size: 18px;
-    line-height: 1;
-    margin: 15px 0px;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px 5px;
 }
 .buttoni {
     background-color:rgb(12, 116, 28);
