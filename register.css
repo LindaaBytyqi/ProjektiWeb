@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    min-height: 100vh;
+    background-color: white;
+}
+.register {
+    width: 450px;
+    background: white;
+    border: 2px solid rgb(96, 209, 117);
+    color: black;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+.register h1 {
+    text-align: center;
+    font-size: 35px;
+}
+.register .form {
+    margin-top: 10px;
+}
+.form .box {
+    margin-top: 20px;
+    width: 80%;
+}
+.form .box input {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    outline: none;
+}
+
