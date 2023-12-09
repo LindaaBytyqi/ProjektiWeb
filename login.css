@@ -10,18 +10,6 @@ body {
     align-items: center;
     background-position: center;
     min-height: 100vh;
-}* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-}
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    min-height: 100vh;
     background: url('soft5.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
@@ -75,7 +63,12 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
-   
+    opacity: 1.5;
+}
+.logini button:hover {
+    opacity: 1;
+    color: white;
+    background-color: rgb(205, 43, 226);
 }
 .login .linku-regjister {
     font-size: 18px;
@@ -142,7 +135,11 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 25px;
-   
+    opacity: 1.2;
+}
+.logini button:hover {
+    opacity: 1;
+    color: white;
 }
 .login .linku-regjister {
     font-size: 18px;
