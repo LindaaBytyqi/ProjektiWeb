@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
     <title>Register</title>
 </head>
 
@@ -12,27 +13,23 @@
         <form action="" class="form">
             <h1>Register</h1>
             <div class="box">
-                <label>Name</label>
-                <input type="text" required>
+                Full Name <input type="text" id="name">
+                <label style="color: blueviolet;" for="name" id="nameError"></label>
             </div>
             <div class="box">
-                <label>Surname</label>
-                <input type="text"  required>
+                Email <input type="email" id="email">
+                <label style="color: blueviolet;" for="email" id="emError"></label>
             </div>
             <div class="box">
-                <label>Email</label>
-                <input type="email"  required >
+                Password <input type="password" id="password">
+                <label style="color: blueviolet;" for="password" id="passError"></label>
             </div>
             <div class="box">
-                <label>Password</label>
-                <input type="password" required>
-            </div>
-            <div class="box">
-                <label>PhoneNumber</label>
-                <input type="number"  required>
+                Phone Number <input type="number" id="number">
+                <label style="color: blueviolet;" for="number" id="numberError"></label>
             </div>
 
-            <button type="submit" class="button">Register</button>
+            <button type="submit" class="button" onclick="validimi()">Register</button>
            
         </form>
     
