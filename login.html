@@ -11,12 +11,14 @@
         <form action="">
             <h1>Login</h1>
             <div class="boxiU">
-                <input type="text" placeholder="Username" required>
+                <input type="text" id="Username" placeholder="Username">
+                <label style="color: blue" for="Username" id="usernameMsg"></label>
             </div>
             <div class="boxiU">
-                <input type="password" placeholder="Password" required>
+                <input type="password" id="Password" placeholder="Password">
+                <label style="color: blue;" for="Password" id="passwordMsg"></label>
             </div>
-            <button type="submit" class="button">Login</button>
+            <button type="submit" id="login" class="button">Login</button>
             <div class="linku-regjister">
                 <p>Don't have an account?
                 <a href="#">Register</a>
@@ -24,5 +26,39 @@
             </div>
         </form>
     </div>
+    
+
+    <script>
+        var usernameRegex = /^[A-Za-z]{9,14}$/;
+        var passwordRegex = /^[A-Z][a-z]{2,8}[0-9]{0,3}$/;
+
+        var loginButton = document.getElementById("login");
+        var usernameMessage = document.getElementById("usernameMsg");
+        var passwordMessage = document.getElementById("passwordMsg");
+
+        loginButton.addEventListener("click", function(event) {
+            var username = document.getElementById("Username").value;
+            var password = document.getElementById("Password").value;
+
+            if(username == "") {
+                   usernameMessage.innerText="Username is required"
+                   event.preventDefault();
+            } else if (!usernameRegex.test(username)){
+                usernameMessage.innerText = 'invalid username';
+                event.preventDefault();
+            }
+
+            if (password == "") {
+                passwordMessage.innerText="Password is required"
+                event.preventDefault();
+            } else if (!passwordRegex.test(password)){
+                passwordMessage.innerText = 'invalid password';
+                event.preventDefault();
+            }
+            else {
+                alert('Username and Password are correct!');
+            }
+        });
+    </script>
 </body>
 </html>
