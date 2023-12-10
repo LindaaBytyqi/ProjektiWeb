@@ -87,6 +87,7 @@ body {
     font-size: 35px;
     color: olive;
     margin-top: 30px;
+    color: green;
     margin-bottom: 30px;
     padding: 30px;
     text-align: center;
@@ -111,18 +112,18 @@ body {
     max-width: 600px;
 }
 .permbajtja h4 {
-     color: rgb(109, 109, 19);
+     color: green;
      font-size: 1.5em;
      margin-bottom: 10px;
 }
 .permbajtja p {
-    color: rgb(47, 67, 12);
+    color: black;
     font-size: 1em;
     line-height: 1.6;
     margin: 15px 5px;
 }
 .buttoni {
-    background-color:rgb(12, 116, 28);
+    background-color:rgb(37, 110, 37);
     color: black;
     border: none;
     border-radius: 3.5px;
@@ -133,7 +134,7 @@ body {
     transition: background-color 0.4s ease;
 }
 .buttoni:hover {
-    background-color: rgb(48, 168, 74);
+    background-color: rgb(70, 147, 70);
 }
 
 .buttoni::after {

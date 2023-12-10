@@ -83,7 +83,7 @@
 }
 
 .main-text {
-    text-align: center;
+    text-align: left;
     color: back;
     padding-top: 180px;
     padding-bottom: 400px;
@@ -91,7 +91,7 @@
 }
 .main-text h1 {
     font-size: 50px;
-    text-align: center;
+    text-align: left;
 }
 .main-text p {
     font-size: 20px;
