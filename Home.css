@@ -81,3 +81,19 @@
     background: rgb(183, 121, 183);
     color: white;
 }
+
+.main-text {
+    text-align: center;
+    color: back;
+    padding-top: 180px;
+    padding-bottom: 400px;
+    
+}
+.main-text h1 {
+    font-size: 50px;
+    text-align: center;
+}
+.main-text p {
+    font-size: 20px;
+    font-style: italic;
+}
