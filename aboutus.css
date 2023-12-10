@@ -5,11 +5,88 @@
     font-family: 'Arial', sans-serif;
 }
 body {
-    background: rgb(210, 227, 182) ;
+    background: white ;
 }
+
+.header {
+    width: 100%;
+    /*height: 100vh;*/
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 30px;
+    color: green;
+    user-select: none;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar ul li a {
+    position: relative;
+    font-size: 1.15em;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: green;
+    font-weight: 500;
+    margin-left: 40px;
+    z-index: 99;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 3px;
+    width: 100%;
+    height: 4px;
+    background: darkkhaki;
+    border-radius: 1em;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.Loginbtn {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid green;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(183, 121, 183);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.Loginbtn:hover {
+    background: rgb(183, 121, 183);
+    color: white;
+}
+
 .heading-u {
     font-size: 35px;
     color: olive;
+    margin-top: 30px;
     margin-bottom: 30px;
     padding: 30px;
     text-align: center;
@@ -22,6 +99,7 @@ body {
     width: 85%;
     margin: auto;
     padding: 15px;
+    padding-bottom: 100px;
 }
 .about img {
     max-width: 100%;
@@ -61,6 +139,75 @@ body {
 .buttoni::after {
     content: "▶";
     margin-left: 10px;
+}
+
+#footer {
+    padding: 10px 400px;
+    background: #efefef;
+}
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text h1 {
+    color: cadetblue;
+    margin-top: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.footer-left {
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.footer-row p {
+    line-height: 35px;  
+    cursor: pointer;
+}
+
+.footer-left .bx, .footer-right .bx {
+    cursor: pointer;
+    font-size: 20px;
+    color: cadetblue;
+    margin: 10px;
+}
+
+.linqet {
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.linqet .bx {
+    margin-bottom: 15px;
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    line-height: 40px;
+    color: cadetblue;
+    cursor: pointer;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 600px) {
