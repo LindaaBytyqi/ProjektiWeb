@@ -97,3 +97,72 @@
     font-size: 20px;
     font-style: italic;
 }
+
+#footer {
+    padding: 10px 400px;
+    background: #efefef;
+}
+.title-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text h1 {
+    color: cadetblue;
+    margin-top: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+.footer-left {
+    text-align: left;
+}
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.footer-row p {
+    line-height: 35px;  
+    cursor: pointer;
+}
+
+.footer-left .bx, .footer-right .bx {
+    cursor: pointer;
+    font-size: 20px;
+    color: cadetblue;
+    margin: 10px;
+}
+
+.linqet {
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.linqet .bx {
+    margin-bottom: 15px;
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    line-height: 40px;
+    color: cadetblue;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
