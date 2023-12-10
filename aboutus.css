@@ -10,7 +10,6 @@ body {
 
 .header {
     width: 100%;
-    /*height: 100vh;*/
     background-size: cover;
     background-position: center;
 }
@@ -24,7 +23,7 @@ body {
 }
 .logo {
     font-size: 30px;
-    color: green;
+    color: rgb(70, 147, 70);
     user-select: none;
     cursor: pointer;
 }
@@ -39,7 +38,7 @@ body {
     font-size: 1.15em;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: green;
+    color: cadetblue;
     font-weight: 500;
     margin-left: 40px;
     z-index: 99;
@@ -68,26 +67,25 @@ body {
     width: 100px;
     height: 40px;
     background: transparent;
-    border: 2px solid green;
+    border: 2px solid rgb(70, 147, 70);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: rgb(183, 121, 183);
+    color: cadetblue;
     font-weight: 500;
     transition: .5s;
 }
 
 .Loginbtn:hover {
-    background: rgb(183, 121, 183);
+    background: rgb(70, 147, 70);
     color: white;
 }
 
 .heading-u {
     font-size: 35px;
-    color: olive;
+    color: cadetblue;
     margin-top: 30px;
-    color: green;
     margin-bottom: 30px;
     padding: 30px;
     text-align: center;
@@ -112,7 +110,7 @@ body {
     max-width: 600px;
 }
 .permbajtja h4 {
-     color: green;
+     color: teal;
      font-size: 1.5em;
      margin-bottom: 10px;
 }
@@ -123,7 +121,7 @@ body {
     margin: 15px 5px;
 }
 .buttoni {
-    background-color:rgb(37, 110, 37);
+    background-color: cadetblue;
     color: black;
     border: none;
     border-radius: 3.5px;
