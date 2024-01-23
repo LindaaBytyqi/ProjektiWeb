@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Contact Us</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .kontakti {
+            padding: 50px;
+            text-align: center;
+            min-height: 100vh;
+            background-color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container h2 {
+            font-size: 35px;
+            color: black;
+            margin-bottom: 40px;
+        }
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+        }
+        .kontakt-form {
+            text-align: left;
+        }
+        .kontakt-form h1{
+            color: black;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            color: black;
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 13px;
+            background-color: #f8f9fa;
+        }
+        input:focus,
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 20px #bbb;
+        }
+        button {
+            display: inline-block;
+            padding: 12px 24px;
+            color:white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 3px;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: rgb(84, 177, 84);
+        }
+        .kontakt-info {
+            font-size: 20px;
+            color: black;
+        }
+        .kontakt-info p {
+            color: black;
+            margin-bottom: 10px;
+           margin-top: 10px;
+        }
+        .kontakt-info i {
+            margin-right: 10px;
+            color: black;
+        }
+
+
+        
+        @media screen and (max-width: 768px){
+            .container{
+                padding: 18px;
+            }
+            .contact-wrapper{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>    
+</head>
+<body>
+    <section class="kontakti">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="kontakt-form">
+                    <h1>Send us messages</h1>
+                        <form>
+                            <div class="form">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="form">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="form">
+                                <input type="number" name="phone" placeholder="PhoneNumber">
+                            </div>
+                            <div class="form">
+                                <textarea name="message"  placeholder="Message"></textarea>
+                            </div>
+                                <button type="submit">Send message</button>
+                        </form>
+                </div>
+                <div class="kontakt-info">
+                    <h4>Contact Information</h4>
+                    <p><i class='bx bxs-location-plus'></i>Adress: Kosovo, Kline-Drenoc</p>
+                    <p><i class='bx bxs-envelope'></i>info@fidanishtja.com</p>
+                    <p><i class='bx bxs-phone'></i>+383 49 763 888</p>
+                    <p><i class='bx bxs-phone'></i>+383 49 449 888</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+</body>
+</html>
