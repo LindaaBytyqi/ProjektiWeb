@@ -93,6 +93,7 @@ header {
     text-align: center;
 }
 
+
 .product {
     width: 250px;
     height: 250px;
@@ -127,6 +128,20 @@ p {
 .price {
     color: #e74c3c;
     font-weight: bold;
+    
+}
+button {
+    color: white;
+    border: none;
+    background-color: rgb(199, 117, 130);
+    border-radius: 3px;
+    height: 25px;
+    transition: 0.3s ease;
+    
+  
+}
+button:hover {
+    background-color: rgb(217, 151, 162);
     
 }
 
@@ -198,3 +213,18 @@ p {
     cursor: pointer;
     justify-content: space-evenly;
 }
+
+@media  screen and (max-width: 760px){
+    container {
+        text-align: center;
+    }
+    .product {
+        display: block;
+        margin-bottom: 30px;
+    }
+    footer {
+        text-align: center;
+    }
+}
+    
+
