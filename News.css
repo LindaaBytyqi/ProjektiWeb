@@ -11,7 +11,7 @@
     background-position: center;
 }
 .navbar {
-    width: 85%;
+    width: 95%;
     margin: auto;
     padding: 35px 0;
     display: flex;
@@ -20,7 +20,7 @@
 }
 .logo {
     font-size: 30px;
-    color: plum;
+    color: #0f0f0f;
     user-select: none;
     cursor: pointer;
 }
@@ -35,7 +35,7 @@
     font-size: 1.15em;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: rgb(183, 121, 183);
+    color: #0f0f0f;
     font-weight: 500;
     margin-left: 40px;
     z-index: 99;
@@ -64,22 +64,21 @@
     width: 100px;
     height: 40px;
     background: transparent;
-    border: 2px solid rgb(183, 121, 183);
+    border: 1.5px solid #0f0f0f;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: rgb(183, 121, 183);
+    color: #0f0f0f;
     font-weight: 500;
     transition: .5s;
 }
 
 .Loginbtn:hover {
-    background: rgb(183, 121, 183);
-    color: white;
+    background: #e18686;
+    border: #df5b5b;
+    color: #0f0f0f;
 }
-
-
 
 #news-blog {
     display: flex;
@@ -87,7 +86,6 @@
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    border-bottom: 1px solid blue ;
 }
 
 .Bheading {
@@ -105,11 +103,51 @@
 }
 
 .Bheading h3 {
+    position: relative;
+    display: inline-block;
     font-size: 2.4rem;
     margin-bottom: 40px;
     color: black;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.Bheading h3::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #df5b5b;
+    transition: width 0.3s;
+}
+
+.Bheading h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #df5b5b;
+    transition: width 0.3s;
+}
+
+.Bheading h3::before {
+    bottom: -3px;
+}
+
+.Bheading h3::after {
+    top: -3px;
+}
+
+.Bheading h3:hover {
+    color: #df5b5b;
+}
+
+.Bheading h3:hover::before,
+.Bheading h3:hover::after {
+    width: 100%;
 }
 
 .Bcontainer {
