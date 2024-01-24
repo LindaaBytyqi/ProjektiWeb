@@ -67,6 +67,7 @@ body {
     font-weight: 500;
     margin-left: 23px;
     opacity: 3.2;
+    transition: all .50s ease;
 }
 .register button:hover {
     opacity: 1;
@@ -74,5 +75,18 @@ body {
     background-color: rgb(206, 101, 189);
 }
 
+.linku-login p {
+    font-size: 16px;
+}
+
+.linku-login p a {
+    color: rgb(173, 62, 156);
+    text-decoration: none;
+    margin-top: 25px;
+    
+}
+.linku-login p a:hover {
+    text-decoration: underline;
+}
 
 
