@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="contact.js"></script>
     <title>Contact Us</title>
     <style>
-        * {
+         *{
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
@@ -26,6 +27,7 @@
             font-size: 35px;
             color: black;
             margin-bottom: 40px;
+           
         }
         .contact-wrapper {
             display: grid;
@@ -40,7 +42,7 @@
             margin-bottom: 20px;
             font-size: 24px;
         }
-        .form {
+        .form-group {
             margin-bottom: 20px;
         }
         input, textarea {
@@ -80,14 +82,14 @@
             margin-bottom: 10px;
            margin-top: 10px;
         }
-        .kontakt-info i {
+        .kontactt-info i {
             margin-right: 10px;
             color: black;
         }
 
 
         
-        @media screen and (max-width: 760px){
+        @media screen and (max-width: 768px){
             .container{
                 padding: 18px;
             }
@@ -105,21 +107,24 @@
             <div class="contact-wrapper">
                 <div class="kontakt-form">
                     <h1>Send us messages</h1>
-                        <form>
-                            <div class="form">
-                                <input type="text" name="name" placeholder="Name">
-                            </div>
-                            <div class="form">
-                                <input type="email" name="email" placeholder="Email">
-                            </div>
-                            <div class="form">
-                                <input type="number" name="phone" placeholder="PhoneNumber">
-                            </div>
-                            <div class="form">
-                                <textarea name="message"  placeholder="Message"></textarea>
-                            </div>
-                                <button type="submit">Send message</button>
-                        </form>
+                    <div class="form-group">
+                        <input type="text" id="Name" placeholder="Name">
+                        <label style="color:black" for="Name" id="nameError"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email">
+                        <label style="color:black" for="email" id="emailError"></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="phone" placeholder="PhoneNumber">
+                        <label style="color:black" for="Phone" id="phoneError"></label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message"  placeholder="Message"></textarea>
+                        <label style="color:black" for="message" id="messageError"></label>
+                    </div>
+                        <button type="submit" class="button" onclick="validimi()">Send message</button>
+                </form>
                 </div>
                 <div class="kontakt-info">
                     <h4>Contact Information</h4>
@@ -131,6 +136,7 @@
             </div>
         </div>
     </section>    
+    
     
 </body>
 </html>
