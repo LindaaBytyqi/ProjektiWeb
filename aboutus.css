@@ -3,48 +3,59 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background: white ;
 }
-
-.header {
+.banner {
     width: 100%;
     background-size: cover;
     background-position: center;
 }
-.navbar {
-    width: 95%;
+.nav-bar {
+    width: 85%;
     margin: auto;
     padding: 35px 0;
     display: flex;
+    list-style: none;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .logo {
-    font-size: 30px;
+    font-size: 28px;
+    margin: -5px 0;
+    margin-left: -10px;
     color: rgb(70, 147, 70);
     user-select: none;
     cursor: pointer;
 }
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 15px;
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 20px;
+    margin: 0px 15px;
     position: relative;
 }
-.navbar ul li a {
+
+.menu li a {
     position: relative;
     font-size: 1.15em;
+    display: inline-block;
+    padding: 0 5px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    /*color: green;*/
+    text-align: center;
     color: cadetblue;
     font-weight: 500;
-    margin-left: 40px;
     z-index: 99;
 }
 
-.navbar ul li a::after {
-    content: '';
+.menu li a::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -58,20 +69,24 @@ body {
     transition: transform 0.5s;
 }
 
-.navbar ul li a:hover::after {
+.menu li a:hover::after {
     transform: scaleX(1);
 }
 
 .Loginbtn {
     width: 100px;
     height: 40px;
+    margin: -5px 0;
+    margin-left: -10px;
+    margin-left: 20px;
     background: transparent;
     border: 2px solid rgb(70, 147, 70);
+    /*border: 2px solid green;*/
     outline: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 1.1em;
-    color: cadetblue;
+    color: rgb(183, 121, 183);
     font-weight: 500;
     transition: .5s;
 }
@@ -81,6 +96,27 @@ body {
     color: white;
 }
 
+.open-menu , .close-menu {
+    position: absolute;
+    color: darkkhaki;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
 .heading-u {
     font-size: 35px;
     color: cadetblue;
@@ -88,6 +124,7 @@ body {
     margin-bottom: 30px;
     padding: 30px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .about {
@@ -98,6 +135,7 @@ body {
     margin: auto;
     padding: 15px;
     padding-bottom: 100px;
+    font-family: 'Arial', sans-serif;
 }
 .about img {
     max-width: 100%;
@@ -208,6 +246,46 @@ body {
     justify-content: space-evenly;
 }
 
+@media(max-width: 700px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:  rgb(137, 132, 63);
+        transition: all 0.8s ease-in-out;
+    }
+    .menu li {
+        margin-top: 35px;
+ 
+    }
+
+    .menu li a {
+        padding: 1px;   
+    }
+
+    .Loginbtn {
+        margin-top: 35px;
+    }
+
+    .Loginbtn:hover {
+        background-color: rgb(65, 129, 131);
+        border: cadetblue;
+    }
+    
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0
+    }
+}
+
 @media screen and (max-width: 600px) {
     .about {
         flex-direction: column;
@@ -226,5 +304,52 @@ body {
 
     .about img {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-left,
+    .footer-right,
+    .linqet {
+        margin-left: 0;
+    }
+
+    .linqet {
+        margin-top: 15px;
+    }
+
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-row h1 {
+        font-size: 1rem;
+    }
+
+    .footer-left, .footer-right p {
+        font-size: .8rem;
+    }
+    .footer-left .bx {
+        font-size: .8rem;
+    }
+    .footer-right .bx {
+        font-size: .8rem;
+    }
+    .linqet .bx {
+        font-size: 1.1rem;
     }
 }

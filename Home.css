@@ -1,9 +1,10 @@
-* {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.headeri {
+.banner {
     width: 100%;
     height: 100vh;
     background-image: url(tulips-blue.jpg);
@@ -11,41 +12,48 @@
     background-position: center;
 }
 
-.navigation {
-    width: 95%;
+.nav-bar {
+    width: 85%;
     margin: auto;
     padding: 35px 0;
     display: flex;
+    list-style: none;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    /*padding: 12px 20px;*/
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 28px;
+    margin: -5px 0;
+    margin-left: -10px;
     color: plum;
     user-select: none;
     cursor: pointer;
 }
-
-.navigation ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 15px;
+.menu {
+    display: flex;
+}
+.menu li {
+    padding-left: 20px;
+    margin: 0px 15px;
     position: relative;
 }
-.navigation ul li a{
+.menu li a {
     position: relative;
+    display: inline-block;
     font-size: 1.15em;
+    padding: 0 5px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(183, 121, 183);
     text-decoration: none;
+    color: rgb(183, 121, 183);
+    text-align: center;
     font-weight: 500;
-    margin-left: 40px;
     z-index: 99;
 }
-
-.navigation ul li a::after {
-    content: '';
+.menu li a::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -56,16 +64,19 @@
     border-radius: 1em;
     transform-origin: left;
     transform: scaleX(0);
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
-.navigation ul li a:hover::after {
+.menu li a:hover:after {
     transform: scaleX(1);
 }
 
 .Loginbtn {
     width: 100px;
     height: 40px;
+    margin: -5px 0;
+    margin-left: -10px;
+    margin-left: 20px;
     background: transparent;
     border: 2px solid rgb(183, 121, 183);
     outline: none;
@@ -82,6 +93,26 @@
     color: white;
 }
 
+.open-menu , .close-menu {
+    position: absolute;
+    color:  rgb(183, 121, 183);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
 .main-text {
     text-align: left;
     color: black;
@@ -91,12 +122,32 @@
     
 }
 .main-text h1 {
-    font-size: 50px;
-    text-align: left;
+    font-size: 60px;
+    padding: 0 3rem;
+    font-style: italic;
 }
 .main-text p {
     font-size: 20px;
     font-style: italic;
+    padding: 0 3rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(83, 97, 111);
+}
+
+.button {
+    margin: 1rem 3rem ;
+    padding: 12px 32px;
+    background-color: rgb(183, 121, 183);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    border: 2px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: slategray;
 }
 
 #footer {
@@ -166,4 +217,110 @@
     color: cadetblue;
     cursor: pointer;
     justify-content: space-evenly;
+}
+
+@media(max-width: 700px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:  rgb(229, 201, 229);
+        transition: all 0.8s ease-in-out;
+    }
+    .menu li {
+        margin-top: 35px;
+ 
+    }
+
+    .menu li a {
+        padding: 1px;   
+    }
+
+    .Loginbtn {
+        margin-top: 35px;
+    }
+
+    .Loginbtn:hover {
+        background-color: rgb(65, 129, 131);
+        border: cadetblue;
+    }
+    
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0
+    }
+}
+
+@media (max-width: 768px) {
+    .main-text {
+        text-align: center;
+    }
+
+    .main-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-text p {
+        font-size: .8rem;
+    }
+
+    .button {
+        margin-top: 5px; 
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-left,
+    .footer-right,
+    .linqet {
+        margin-left: 0;
+    }
+
+    .linqet {
+        margin-top: 15px;
+    }
+
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-row h1 {
+        font-size: 1rem;
+    }
+
+    .footer-left, .footer-right p {
+        font-size: .8rem;
+    }
+    .footer-left .bx {
+        font-size: .8rem;
+    }
+    .footer-right .bx {
+        font-size: .8rem;
+    }
+    .linqet .bx {
+        font-size: 1.1rem;
+    }
 }

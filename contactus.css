@@ -12,40 +12,45 @@
     background-color: rgb(218, 206, 218);
 }
 
-.navbar {
-    width: 95%;
+.nav-bar {
+    width: 85%;
     margin: auto;
     padding: 35px 0;
     display: flex;
-    align-items: center;
+    list-style: none;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 .logo {
-    font-size: 30px;
-    /*padding-right: 5px;*/
+    font-size: 28px;
+    margin: -5px 0;
+    margin-left: -10px;
     color: rgb(88, 148, 150);
     user-select: none;
     cursor: pointer;
 }
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
+.menu {
+    display: flex;
+}
+.menu li{
+    padding-left: 20px;
     margin: 0 15px;
     position: relative;
 }
-.navbar ul li a {
+.menu li a {
     position: relative;
+    display: inline-block;
     font-size: 1.15em;
+    padding: 0 5px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: rgb(183, 121, 183);
     font-weight: 500;
-    /**/
-    margin-left: 40px;
     z-index: 99;
 }
 
-.navbar ul li a::after {
+.menu li a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -60,14 +65,16 @@
     transition: transform 0.5s;
 }
 
-.navbar ul li a:hover::after {
+.menu li a:hover::after {
     transform: scaleX(1);
 }
 
 .Loginbtn {
     width: 100px;
     height: 40px;
-    margin-right: 10px;
+    margin: -5px 0;
+    margin-left: -10px;
+    margin-left: 20px;
     background: transparent;
     border: 2px solid rgb(183, 121, 183);
     outline: none;
@@ -84,6 +91,27 @@
     border: rgb(134, 197, 199);
     color: white;
 }
+
+.open-menu , .close-menu {
+    position: absolute;
+    color:  rgb(58, 123, 126);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
 
 .kontakti {
     margin-top: 30px;
@@ -292,6 +320,46 @@ textarea:focus {
     justify-content: space-evenly;
 }
 
+@media(max-width: 700px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:  rgb(185, 228, 229);/*rgb(158, 208, 210);*/
+        transition: all 0.8s ease-in-out;
+    }
+    .menu li {
+        margin-top: 35px;
+ 
+    }
+
+    .menu li a {
+        padding: 1px;   
+    }
+
+    .Loginbtn {
+        margin-top: 35px;
+    }
+
+    .Loginbtn:hover {
+        background-color: rgb(221, 192, 221);/*rgb(229, 201, 229)*/
+        border: rgb(221, 192, 221);
+    }
+    
+    .open-menu , .close-menu {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0
+    }
+}
+
 @media screen and (max-width: 760px){
     .container{
         padding: 18px;
@@ -320,5 +388,29 @@ textarea:focus {
 
     .linqet {
         margin-top: 15px;
+    }
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .title-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer-row h1 {
+        font-size: 1rem;
+    }
+
+    .footer-left, .footer-right p {
+        font-size: .8rem;
+    }
+    .footer-left .bx {
+        font-size: .8rem;
+    }
+    .footer-right .bx {
+        font-size: .8rem;
+    }
+    .linqet .bx {
+        font-size: 1.1rem;
     }
 }
