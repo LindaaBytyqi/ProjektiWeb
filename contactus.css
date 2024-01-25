@@ -1,0 +1,138 @@
+.kontakti {
+    margin-top: 30px;
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+    background-color: rgb(218, 206, 218);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.kontakt-form {
+    text-align: left;
+}
+.kontakt-form h1{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input, textarea {
+    color: black;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 13px;
+    background-color: #f8f9fa;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 20px #bbb;
+}
+
+.sumbitbtn {
+    display: inline-block;
+    padding: 12px 24px;
+    color:white;
+    background-color: cadetblue;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.sumbitbtn:hover {
+    content: "▶";
+}
+
+.sumbitbtn:hover::after {
+    content: "▶";
+    margin-left: 10px;
+}
+
+.kontakt-icon {
+    font-size: 20px;
+    color: black;
+    position: relative;
+    padding-left: 80px;
+}
+
+.kontakt-icon img {
+    width: 100%;
+    margin-right: 50px;
+    border-radius: 7px;
+    cursor: pointer;
+    /*opacity: 0.5;*/
+    transition: 2s;
+    padding-left: 10px;
+}
+
+.fotoja {
+    margin-left: 20px;
+}
+
+.kontakt-icon img:hover {
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    /*background: linear-gradient(rgba(0,0,0.5,0.5),#009688);*/
+    opacity: .5;
+    transition: 1s;
+    transform: rotate(180deg);
+    /*transform: 30s all ease;*/
+}
+
+.kontakt-icon img:hover::after {
+    width: 100%;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.2),#009688);
+    opacity: 1;
+    transition: 1s;
+    transform: 30s all ease;
+}
+
+.shkrimi {
+    width: 80%;
+    position: absolute;
+    bottom: 40%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+
+.shkrimi h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #f8f9fa;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.kontakt-icon .shkrimi h3 {
+    opacity: 0;
+}
+
+.kontakt-icon:hover .shkrimi h3 {
+    opacity: 1;
+}

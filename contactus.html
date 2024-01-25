@@ -3,101 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="contact.js"></script>
     <title>Contact Us</title>
-    <style>
-         *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .kontakti {
-            padding: 50px;
-            text-align: center;
-            min-height: 100vh;
-            background-color: white;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .container h2 {
-            font-size: 35px;
-            color: black;
-            margin-bottom: 40px;
-           
-        }
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-gap: 30px;
-        }
-        .kontakt-form {
-            text-align: left;
-        }
-        .kontakt-form h1{
-            color: black;
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        input, textarea {
-            color: black;
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: none;
-            font-size: 13px;
-            background-color: #f8f9fa;
-        }
-        input:focus,
-        textarea:focus {
-            outline: none;
-            box-shadow: 0 0 20px #bbb;
-        }
-        button {
-            display: inline-block;
-            padding: 12px 24px;
-            color:white;
-            background-color: green;
-            border: none;
-            cursor: pointer;
-            font-size: 15px;
-            border-radius: 3px;
-            transition: 0.3s ease;
-        }
-        button:hover {
-            background-color: rgb(84, 177, 84);
-        }
-        .kontakt-info {
-            font-size: 20px;
-            color: black;
-        }
-        .kontakt-info p {
-            color: black;
-            margin-bottom: 10px;
-           margin-top: 10px;
-        }
-        .kontactt-info i {
-            margin-right: 10px;
-            color: black;
-        }
 
-
-        
-        @media screen and (max-width: 768px){
-            .container{
-                padding: 18px;
-            }
-            .contact-wrapper{
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>    
 </head>
 <body>
    
@@ -108,30 +18,29 @@
                 <div class="kontakt-form">
                     <h1>Send us messages</h1>
                     <div class="form-group">
-                        <input type="text" id="Name" placeholder="Name">
+                        <input type="text" id="Name" placeholder="Name...">
                         <label style="color:black" for="Name" id="nameError"></label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email...">
                         <label style="color:black" for="email" id="emailError"></label>
                     </div>
                     <div class="form-group">
-                        <input type="number" id="phone" placeholder="PhoneNumber">
+                        <input type="number" id="phone" placeholder="Phone Number...">
                         <label style="color:black" for="Phone" id="phoneError"></label>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message"  placeholder="Message"></textarea>
+                        <textarea name="message" id="message"  placeholder="Message..." style="font-family: 'Poppins', sans-serif;"></textarea>
                         <label style="color:black" for="message" id="messageError"></label>
                     </div>
                         <button type="submit" class="button" onclick="validimi()">Send message</button>
                 </form>
                 </div>
-                <div class="kontakt-info">
-                    <h4>Contact Information</h4>
-                    <p><i class='bx bxs-location-plus'></i>Adress: Kosovo, Kline-Drenoc</p>
-                    <p><i class='bx bxs-envelope'></i>info@fidanishtja.com</p>
-                    <p><i class='bx bxs-phone'></i>+383 49 763 888</p>
-                    <p><i class='bx bxs-phone'></i>+383 49 449 888</p>
+                <div class="kontakt-icon">
+                    <img src="ccaa.png" class="fotoja">
+                    <div class="shkrimi">
+                        <h3>Hurry Up!</h3>
+                    </div>
                 </div>
             </div>
         </div>
