@@ -172,11 +172,6 @@ body {
     background-color: rgb(70, 147, 70);
 }
 
-.buttoni::after {
-    content: "▶";
-    margin-left: 10px;
-}
-
 #footer {
     padding: 10px 400px;
     background: #efefef;
@@ -306,7 +301,10 @@ body {
         width: 100%;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 @media (max-width: 768px) {
     .footer-row {
         flex-direction: column;
@@ -327,6 +325,7 @@ body {
     .linqet {
         margin-top: 15px;
     }
+<<<<<<< HEAD
 
     .title-text h1 {
         font-size: 1.5rem;
@@ -353,3 +352,6 @@ body {
         font-size: 1.1rem;
     }
 }
+=======
+}
+>>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271

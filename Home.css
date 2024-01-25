@@ -122,9 +122,15 @@
     
 }
 .main-text h1 {
+<<<<<<< HEAD
     font-size: 60px;
     padding: 0 3rem;
     font-style: italic;
+=======
+    font-size: 50px;
+    text-align: left;
+    padding: 0 3rem;
+>>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 }
 .main-text p {
     font-size: 20px;
@@ -132,6 +138,7 @@
     padding: 0 3rem;
     margin-top: 10px;
     margin-bottom: 15px;
+<<<<<<< HEAD
     color: rgb(83, 97, 111);
 }
 
@@ -148,6 +155,108 @@
 
 .button:hover {
     background-color: slategray;
+=======
+}
+#about h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: cadetblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.abContainer {
+    display: flex;
+}
+
+.abContainer video {
+    margin-top: .5rem;
+    margin-left: 3rem;
+    width: 37rem; 
+    height: 21rem;
+    border-radius: .5rem;
+}
+
+.abContainer .text-container h3 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(152, 223, 223);
+    align-items: start;
+}
+
+.abContainer .text-container p {
+    flex: 1 1 40rem;
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    color: black;
+}
+
+.pro h3 {
+    color:pink;
+    font-size: 50px;
+}
+ .container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+.product {
+    width: 250px;
+    height: 250px;
+    margin: 30px 0;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+h4 {
+    color: black;
+    margin-block: 10px;
+}
+p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+    
+}
+button {
+    color: white;
+    border: none;
+    background-color: rgb(199, 117, 130);
+    border-radius: 3px;
+    height: 25px;
+    transition: 0.3s ease;
+    
+  
+}
+button:hover {
+    background-color: rgb(217, 151, 162);
+    
+>>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 }
 
 #footer {
