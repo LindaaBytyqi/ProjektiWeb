@@ -122,15 +122,9 @@
     
 }
 .main-text h1 {
-<<<<<<< HEAD
     font-size: 60px;
     padding: 0 3rem;
     font-style: italic;
-=======
-    font-size: 50px;
-    text-align: left;
-    padding: 0 3rem;
->>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 }
 .main-text p {
     font-size: 20px;
