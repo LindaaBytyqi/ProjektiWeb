@@ -301,10 +301,7 @@ body {
         width: 100%;
     }
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 @media (max-width: 768px) {
     .footer-row {
         flex-direction: column;
@@ -325,7 +322,6 @@ body {
     .linqet {
         margin-top: 15px;
     }
-<<<<<<< HEAD
 
     .title-text h1 {
         font-size: 1.5rem;
@@ -352,6 +348,3 @@ body {
         font-size: 1.1rem;
     }
 }
-=======
-}
->>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271

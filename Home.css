@@ -132,7 +132,6 @@
     padding: 0 3rem;
     margin-top: 10px;
     margin-bottom: 15px;
-<<<<<<< HEAD
     color: rgb(83, 97, 111);
 }
 
@@ -149,7 +148,6 @@
 
 .button:hover {
     background-color: slategray;
-=======
 }
 #about h1 {
     font-size: 2rem;
@@ -249,8 +247,6 @@ button {
 }
 button:hover {
     background-color: rgb(217, 151, 162);
-    
->>>>>>> da159ec14f862c7bcdfa1110bb197a485524d271
 }
 
 #footer {
