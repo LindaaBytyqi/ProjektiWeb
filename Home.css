@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -136,12 +135,14 @@
 }
 
 .button {
-    margin: 1rem 3rem ;
-    padding: 12px 32px;
+    margin: 1rem 3rem;
+    padding: 5px 25px;
     background-color: rgb(183, 121, 183);
     font-family: 'Poppins', sans-serif;
     border-radius: 30px;
-    border: 2px;
+    height: 30px;
+    width: 120px;
+    font-size: 14px;
     transition: all .50s ease;
     cursor: pointer;
 }
@@ -186,7 +187,15 @@
     margin-left: 10px;
     color: black;
 }
-
+header {
+    background-color: white;
+    margin-top: 5px;
+    padding: 19px;
+    text-align: center;
+    border: 6px solid white;
+    box-shadow: 0 0 8px 3px rgba(0,0,0,0.2);
+    text-decoration: 'Poppins', sans-serif;
+}
 .pro h3 {
     color:pink;
     font-size: 50px;
@@ -238,15 +247,16 @@ p {
 button {
     color: white;
     border: none;
-    background-color: rgb(199, 117, 130);
+    background-color: rgb(229, 79, 79);
     border-radius: 3px;
     height: 25px;
+    width: 70px;
     transition: 0.3s ease;
     
   
 }
 button:hover {
-    background-color: rgb(217, 151, 162);
+    background-color: rgb(227, 103, 103);
 }
 
 #footer {
