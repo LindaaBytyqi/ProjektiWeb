@@ -19,12 +19,12 @@
                 <h2 class="logo">FIDANISHTJA BYTYQI</h2>
                 <input type='checkbox' id='check' />
                 <span class="menu">
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="News.html">News</a></li>
-                    <li><a href="contactus.html">Contact</a></li>
-                    <a href="login.html"><button class="Loginbtn">Log in</button></a>
+                    <li><a href="Home.php">Home</a></li>
+                    <li><a href="aboutus.php">About</a></li>
+                    <li><a href="product.php">Products</a></li>
+                    <li><a href="News.php">News</a></li>
+                    <li><a href="contactus.php">Contact</a></li>
+                    <a href="login.php"><button class="Loginbtn">Log in</button></a>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>

@@ -25,7 +25,7 @@
             <button type="submit" id="login" class="button">Login</button>
             <div class="linku-regjister">
                 <p>Don't have an account?
-                <a href="register.html">Register</a>
+                <a href="register.php">Register</a>
                 </p>
             </div>
         </form>
