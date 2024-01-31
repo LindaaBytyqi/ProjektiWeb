@@ -1,54 +1,48 @@
-let nameRegex = /^[a-zA-Z]{2,12}$/;
-let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$/;
-let phoneRegex = /^[0-9+]{6,14}$/;
-let messageRegex = /^[a-zA-Z0-9,'.;"!?]{10,50}$/;
+var nameRegex = /^[a-zA-Z]{2,25}$/;
+let emailRegex = /^[a-z]+[._-]?\w+@+[a-z]+\.[a-z]{2,3}$/;
+let phoneRegex = /^[0-9+()-]{2,20}$/;
 
-function validimi() {
-    let nameField = document.getElementById("name");
-    let emailField = document.getElementById("email");
-    let phoneField = document.getElementById("phone");
-    let messageField = document.getElementById("message");
+var submitbtn = document.getElementById("submit");
+var nameMessage = document.getElementById("nameMsg");
+var emailMessage = document.getElementById("emailMsg");
+var phoneMessage = document.getElementById("phoneMsg");
 
-    let nameError = document.getElementById("nameError");
-    let emailError = document.getElementById("emailError");
-    let phoneError = document.getElementById("phoneError");
-    let messageError = document.getElementById("messageError");
+submitbtn.addEventListener("click", function(event) {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phonenumber").value;
 
-    nameError.textContent = '';
-    emailError.textContent = '';
-    phoneError.textContent = '';
-    messageError.textContent = '';
+    nameMessage.innerText  = "";
+    emailMessage.innerText  = "";
+    phoneMessage.innerText  = "";
 
 
-    if (nameField.value == "") {
-        nameError.textContent = "Filling this field is required";
+    if (name == "") {
+        nameMessage.innerText = "Name is required !";
         event.preventDefault();
-    } else if (!nameRegex.test(nameField.value)) {
-        nameError.textContent = "Invalid name";
-        isValid.preventDefault();
-    }
-
-    if (emailField.value == "") {
-        emailError.textContent = "Filling this field is required";
-        event.preventDefault();
-    } else if (!emailRegex.test(emailField.value)) {
-        emailError.textContent = "Invalid email";
+    } else if (!nameRegex.test(name)) {
+        nameError.textContent = "Invalid name.";
         event.preventDefault();
     }
 
-    if (phoneField.value == "") {
-        phoneError.textContent = "Filling this field is required";
+    if (email == "") {
+        emailMessage.innerText = "Email is required !";
         event.preventDefault();
-    } else if (!phoneRegex.test(phoneField.value)) {
-        phoneError.textContent = "Invalid phone";
+    } else if (!emailRegex.test(email)) {
+        emailError.textContent = "Invalid email.";
         event.preventDefault();
     }
 
-    if (messageField.value == "") {
-        messageError.textContent = "Filling this field is required";
+    if (phone == "") {
+        phoneMessage.innerText = "Phone number is required !";
         event.preventDefault();
-    } else if (!messageRegex.test(messageField.value)) {
-        messageError.textContent = "Invalid message";
+    } else if (!phoneRegex.test(phone)) {
+        phoneError.textContent = "Invalid phone number.";
         event.preventDefault();
     }
-}
+
+    else {
+        alert('Message was sent !');
+    }
+
+});

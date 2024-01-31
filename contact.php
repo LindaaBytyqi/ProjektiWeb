@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="contact.js" defer></script>
-    <title>Contact Us</title>
-
+    <title>Contact us</title>
+  
 </head>
 <body>
+
+
     <nav>
         <div class ="banner">
         <ul class="nav-bar">
@@ -26,11 +26,14 @@
                 <li><a href="product.php">Products</a></li>
                 <li><a href="News.php">News</a></li>
                 <li><a href="contactus.php">Contact</a></li>
-                <a href="login.html"><button class="Loginbtn">Log in</button></a>
+                <a href="login.php"><button class="Loginbtn">Log in</button></a>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
+        </div>
+    </nav>
+
    
     <section class="kontakti">
         <div class="container">
@@ -39,21 +42,22 @@
                 <div class="kontakt-form">
                     <h1>Send us messages</h1>
                     <div class="form-group">
-                        <input type="text" id="name" placeholder="Name...">
-                        <label style="font-size: 14px; color:black" for="Name" id="nameMsg"></label>
+                        <input type="text" id="Name" placeholder="Name...">
+                        <label style="color:black" for="Name" id="nameError"></label>
                     </div>
                     <div class="form-group">
                         <input type="email" id="email" placeholder="Email...">
-                        <label style="font-size: 14px; color:black" for="email" id="emailMsg"></label>
+                        <label style="color:black" for="email" id="emailError"></label>
                     </div>
                     <div class="form-group">
-                        <input type="number" id="phonenumber" placeholder="Phone Number...">
-                        <label style="font-size: 14px; color:black" for="Phone" id="phoneMsg"></label>
+                        <input type="number" id="phone" placeholder="Phone Number...">
+                        <label style="color:black" for="Phone" id="phoneError"></label>
                     </div>
                     <div class="form-group">
                         <textarea name="message" id="message"  placeholder="Message..." style="font-family: 'Poppins', sans-serif;"></textarea>
+                        <label style="color:black" for="message" id="messageError"></label>
                     </div>
-                        <button type="submit" id="submit" class="submitbtn" >Send message</button>
+                        <button type="submit" class="submitbtn" onclick="validimi()">Send message</button>
                 </form>
                 </div>
                 <div class="kontakt-icon">
@@ -64,33 +68,34 @@
                 </div>
             </div>
         </div>
-    </section>    
-    
+</section>    
     <section class="footer">
-        <div class="title-text">
-            <h1>Visit Shop Today</h1>
-        </div>
-        <div class="footer-row">
-            <div class="footer-left">
-                <h1>Opening Hours</h1>
-                <p><i class='bx bx-time'></i>Monday to Friday - 9am to 9pm</p>
-                <p><i class='bx bx-time'></i>Saturday and Sunday - 8am to 11pm</p>
+            <div class="title-text">
+                <h1>Visit Shop Today</h1>
             </div>
-            <div class="footer-right">
-                <h1>Contact Us</h1>
-                <p><i class='bx bxs-location-plus'></i>Adress: Kosovo, Kline-Drenoc</p>
-                <p><i class='bx bxs-envelope'></i>info@fidanishtja.com</p>
-                <p><i class='bx bxs-phone'></i>+383 49 763 888</p>
-                <p><i class='bx bxs-phone'></i>+383 49 449 888</p>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Opening Hours</h1>
+                    <p><i class='bx bx-time'></i>Monday to Friday - 9am to 9pm</p>
+                    <p><i class='bx bx-time'></i>Saturday and Sunday - 8am to 11pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Contact Us</h1>
+                    <p><i class='bx bxs-location-plus'></i>Adress: Kosovo, Kline-Drenoc</p>
+                    <p><i class='bx bxs-envelope'></i>info@fidanishtja.com</p>
+                    <p><i class='bx bxs-phone'></i>+383 49 763 888</p>
+                    <p><i class='bx bxs-phone'></i>+383 49 449 888</p>
+                </div>
             </div>
-        </div>
-    
-        <div class="linqet">
-            <i class='bx bxl-facebook-circle'></i>
-            <i class='bx bxl-instagram'></i>
-            <i class='bx bxl-youtube'></i>
-        </div>
-       </section>
+        
+            <div class="linqet">
+                <i class='bx bxl-facebook-circle'></i>
+                <!--<i class='bx bxl-instagram'></i>-->
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-youtube'></i>
+            </div>
+    </section>
+   
     
 </body>
 </html>
