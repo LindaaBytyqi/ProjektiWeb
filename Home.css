@@ -134,20 +134,19 @@
     color: rgb(83, 97, 111);
 }
 
-.button {
-    margin: 1rem 3rem;
-    padding: 5px 25px;
+.butoni-order {
+    margin: 1rem 3rem ;
+    padding: 12px 32px;
     background-color: rgb(183, 121, 183);
     font-family: 'Poppins', sans-serif;
     border-radius: 30px;
-    height: 30px;
-    width: 120px;
-    font-size: 14px;
+    border: 2px;
     transition: all .50s ease;
     cursor: pointer;
+
 }
 
-.button:hover {
+.butoni-order:hover {
     background-color: slategray;
 }
 #about h1 {
@@ -244,7 +243,7 @@ p {
     font-weight: bold;
     
 }
-button {
+.add-to-cart {
     color: white;
     border: none;
     background-color: rgb(229, 79, 79);
@@ -252,11 +251,75 @@ button {
     height: 25px;
     width: 70px;
     transition: 0.3s ease;
-    
-  
+    cursor: pointer;
 }
-button:hover {
+
+.add-to-cart:hover {
     background-color: rgb(227, 103, 103);
+}
+
+#ab-section {
+    width: 100;
+    padding: 70px 0;
+}
+
+.about-us {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.content-ab {
+    flex-basis: 50%;
+    text-align: center;
+    /*border-radius: 7px;*/
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.content-ab img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*.content-ab h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #009688;
+    font-style: italic;
+    font-size: 25px;
+}*/
+
+.content-ab p {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.butoni-about {
+    background-color:#e26e61;
+    color: black;
+    border: none;
+    border-radius: 3.5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    /*font-style: italic;*/
+    padding: 12px;
+    transition: background-color 0.4s ease;
+}
+.butoni-about:hover {
+    background-color: rgb(48, 168, 74);
+}
+
+.butoni-about::after {
+    content: "▶";
+    margin-left: 10px;
 }
 
 #footer {
@@ -381,9 +444,26 @@ button:hover {
         font-size: .8rem;
     }
 
-    .button {
+    .butoni-order {
         margin-top: 5px; 
         font-size: 0.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-ab {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .content-ab p{
+        margin-top: 0.5px;
+        padding-top: 2px;
+        font-size: 14px;
+    }
+
+    .content-ab .butoni-about{
+        font-size: 0.65em;
     }
 }
 
