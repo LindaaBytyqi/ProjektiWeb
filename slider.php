@@ -100,10 +100,11 @@
 <body>
     <div class="slide-container">
         <div class="slides">
-            <img src="azalea.jpg" class="active">
-            <img src="Foto3.jpg" class="">
-            <img src="Foto4.jpg" class="">
-            <img src="soft3.jpg" class="">
+            <img src="garden1.jpg" class="active">
+            <img src="garden5.jpg" class="">
+            <img src="gard.jpg" class="">
+            <img src="photo.jpg" class="">
+            <img src="garden++.jpg" class="">
         </div>
         <div class="buttons">
             <span class="next">&#10095;</span>

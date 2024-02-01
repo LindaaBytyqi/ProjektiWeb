@@ -23,7 +23,7 @@
                 <li><a href="product.html">Products</a></li>
                 <li><a href="News.html">News</a></li>
                 <li><a href="contactus.html">Contact</a></li>
-                <a href="login.html"><button class="Loginbtn">Log in</button></a>
+                <a href="login.php"><button class="Loginbtn">Log in</button></a>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
