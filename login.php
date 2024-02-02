@@ -12,17 +12,17 @@
 </head>
 <body>
     <div class="logini">
-        <form action="">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
             <h1>Login</h1>
             <div class="boxiU">
-                <input type="text" id="Username" placeholder="Username">
+                <input type="text" id="Username" name="name" placeholder="Username">
                 <label style="color: rgb(181, 74, 181); font-family: 'Crimson Text', sans-serif; font-size: 16px;" for="Username" id="usernameMsg"></label>
             </div>
             <div class="boxiU">
-                <input type="password" id="Password" placeholder="Password">
+                <input type="password" id="Password" name="password" placeholder="Password">
                 <label style="color: rgb(181, 74, 181); font-family: 'Crimson Text', sans-serif; font-size: 16px;" for="Password" id="passwordMsg"></label>
             </div>
-            <button type="submit" id="login" class="button">Login</button>
+            <button type="submit" id="login" name="loginbtn" value="Login" class="button">Login</button>
             <div class="linku-regjister">
                 <p>Don't have an account?
                 <a href="register.php">Register</a>

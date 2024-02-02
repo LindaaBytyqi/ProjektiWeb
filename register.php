@@ -11,26 +11,26 @@
 
 <body>
     <div class="register">
-        <form action="" class="form">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="form">
             <h1>Register</h1>
             <div class="box">
-                Full Name <input type="text" id="name">
+                Full Name <input type="text" id="name" name="name">
                 <label style="color: blueviolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="name" id="nameError"></label>
             </div>
             <div class="box">
-                Email <input type="email" id="email">
+                Email <input type="email" id="email" name="email">
                 <label style="color: blueviolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="email" id="emError"></label>
             </div>
             <div class="box">
-                Password <input type="password" id="password">
+                Password <input type="password" id="password" name="password">
                 <label style="color: blueviolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="password" id="passError"></label>
             </div>
             <div class="box">
-                Phone Number <input type="number" id="number">
+                Phone Number <input type="number" id="number" name="phonenumber">
                 <label style="color: blueviolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="number" id="numberError"></label>
             </div>
 
-            <button type="submit" class="button" onclick="validimi()">Register</button>
+            <button type="submit" class="button" name="registerBtn" value="register" onclick="validimi()">Register</button>
             <div class="linku-login">
                 <p>Have an account?
                 <a href="login.html">Log in</a>
