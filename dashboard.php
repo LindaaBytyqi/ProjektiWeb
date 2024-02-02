@@ -17,7 +17,7 @@
       </ul>
     </header>
 
-    <h1>Welcome to Dashboard !</h1>;
+    <h1 class="welcome">>Welcome to Dashboard !</h1>;
 
 </body>
 </html>

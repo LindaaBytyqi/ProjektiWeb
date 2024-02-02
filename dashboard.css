@@ -13,10 +13,13 @@ header {
     background-color: #333;
     color: white;
     padding: 30px;
+    text-align: center; 
 }
 
 ul {
     list-style: none;
+    text-align: center; 
+    margin-top: 10px;
 }
 
 ul li {
@@ -41,10 +44,65 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
+
+.welcome {
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.admin-acc {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.user-acc {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.user-row {
+    display: inline-block;
+    width: 300px; 
+    margin: 10px; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.user-info,
+.user-actions {
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.user-info {
+    width: 60%; 
+}
+
+.user-actions {
+    width: 40%; 
+}
+
+.user-actions button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
     ul li {
         display: block;
         margin-bottom: 10px;
+    }
+    .user-row {
+        flex-direction: column;
+    }
+
+    .user-actions {
+        width: 100%;
+        margin-top: 10px;
     }
 
 }

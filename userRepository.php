@@ -113,6 +113,29 @@ class UserRepository {
          echo "<script>alert('update was successful'); </script>";
     } 
 
+    function getAdminUsers(){
+        $conn = $this->connection;
+
+        $sql = "SELECT * FROM user WHERE role = 1";
+
+        $statement = $conn->query($sql);
+        $adminUsers = $statement->fetchAll();
+
+        return $adminUsers;
+    }
+
+    function getSimpleUsers(){
+        $conn = $this->connection;
+
+        $sql = "SELECT * FROM user WHERE role = 0";
+
+        $statement = $conn->query($sql);
+        $simpleUsers = $statement->fetchAll();
+
+        return $simpleUsers;
+    }
+
+
     function deleteUser($id){
         $conn = $this->connection;
 

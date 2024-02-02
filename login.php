@@ -30,5 +30,6 @@
             </div>
         </form>
     </div>
+    <?php include_once 'loginController.php';?>
 </body>
 </html>

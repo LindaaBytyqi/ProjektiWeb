@@ -1,3 +1,13 @@
+<?php
+include_once 'userRepository.php';
+
+$userRepository = new UserRepository();
+
+$adminUsers = $userRepository->getAdminUsers();
+$simpleUsers = $userRepository->getSimpleUsers();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,40 +22,57 @@
     <header>
     <ul>
           <li><a href="dashboard.php">Home</a></li>
-          <li><a href="dashboard.php">Users</a></li>
+          <li><a href="dashboardUser.php">Users</a></li>
           <li><a href="logout.php"><button>Logout</button></a></li>
       </ul>
     </header>
 
-    <h1>Usser Accounts</h1>
+    <h1 class="admin-acc">Admin Accounts</h1>
 
-             <?php 
-             include_once 'userRepository.php';
+    <?php 
+    foreach($adminUsers as $adminUser){
+        echo 
+        "
+        <div class='user-row'>
+            <div class='user-info'>
+                <p>ID: {$adminUser['id']}</p>
+                <p>Name: {$adminUser['name']}</p>
+                <p>Email: {$adminUser['email']}</p>
+                <p>Password: {$adminUser['password']}</p>
+                <p>PhoneNumber: {$adminUser['phonenumber']}</p>
+            </div>
+            <div class='user-actions'>
+                <a href='edit.php?id={$adminUser['id']}'><button>Edit</button></a>
+                <a href='delete.php?id={$adminUser['id']}'><button>Delete</button></a>
+            </div>
+        </div>
+        ";
+    }
+    ?>
 
-             $userRepository = new UserRepository();
+    <h1 class="user-acc">User Accounts</h1>
 
-             $users = $userRepository->getAllUsers();
-
-             foreach($users as $user){
+    <?php 
+    foreach($simpleUsers as $simpleUser){
                 echo 
                 "
                 <div class='user-row'>
                     <div class='user-info'>
-                        <p>ID: {$user['id']}</p>
-                        <p>Name: {$user['name']}</p>
-                        <p>Email: {$user['email']}</p>
-                        <p>Password: {$user['password']}</p>
-                        <p>PhoneNumber: {$user['phonenumber']}</p>
+                        <p>ID: {$simpleUser['id']}</p>
+                        <p>Name: {$simpleUser['name']}</p>
+                        <p>Email: {$simpleUser['email']}</p>
+                        <p>Password: {$simpleUser['password']}</p>
+                        <p>PhoneNumber: {$simpleUser['phonenumber']}</p>
                     </div>
                     <div class='user-actions'>
-                        <a href='edit.php?id={$user['id']}'><button>Edit</button></a>
-                        <a href='delete.php?id={$user['id']}'><button>Delete</button></a>
-                        </div>
+                        <a href='edit.php?id={$simpleUser['id']}'><button>Edit</button></a>
+                        <a href='delete.php?id={$simpleUser['id']}'><button>Delete</button></a>
                     </div>
-                    ";
-                 }
-                 ?>
-        </table>
-    </body>
-    </html>
+                </div>
+                ";
+             }
+        ?>
+    </table>
+</body>
+</html>
     

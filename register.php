@@ -37,5 +37,6 @@
                 </p>
             </div>
         </form>
+        <?php include_once 'registerController.php';?>
 </body>
 </html>
