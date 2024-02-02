@@ -71,7 +71,7 @@ class UserRepository {
                 header("Location: dashboard.php");
             } else {
                 echo "<script> alert('User has logged in!'); </script>";
-                header("Location: Homii.php");
+                header("Location: Home.php");
             }
         } else {
             echo "<script> alert('Invalid username or password!'); </script>";

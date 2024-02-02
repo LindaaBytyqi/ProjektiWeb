@@ -1,4 +1,4 @@
-var usernameRegex = /^[A-Za-z]{9,14}$/;
+var usernameRegex = /^[A-Za-z]{2,20}$/;
 var passwordRegex = /^[A-Z][a-z]{2,8}[0-9]{0,3}$/;
 
 var loginButton = document.getElementById("login");
