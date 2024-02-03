@@ -54,13 +54,24 @@ $user  = $userRepository->getUserById($userId);
             width: 250px;
             margin-left: 75px;
             border-radius: 2rem;
-            background-color: #4caf50;
+            background-color: purple;
             color: #fff;
             cursor: pointer;
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: rgb(103, 15, 103);
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 80%;
+                padding: 10px;
+            }
+
+            input[type="submit"] {
+                width: 80%;
+                margin-left: 9.5%;
+            }
         }
         </style>
 </head>

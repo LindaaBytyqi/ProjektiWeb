@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 
 </head>
@@ -17,7 +18,7 @@
       </ul>
     </header>
 
-    <h1 class="welcome">>Welcome to Dashboard !</h1>;
+    <h1 class="welcome">Welcome to Dashboard !</h1>;
 
 </body>
 </html>
