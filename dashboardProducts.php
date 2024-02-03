@@ -94,7 +94,7 @@
             echo "<td>" . $product['name'] . "</td>";
             echo "<td>" . $product['price'] . "</td>";
             echo "<td><img src='" . $product['image'] . "' alt='" . $product['name'] . "' height='50px' width='50px'></td>";
-            echo "<td><a class='delete-link' href='deleteProduct.php?id=" . $product['id'] . "'>Delete</a></td>";
+            echo "<td><a class='delete-link' href='deleteProducts.php?id=" . $product['id'] . "'>Delete</a></td>";
             echo "</tr>";
         }
         
