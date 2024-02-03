@@ -9,14 +9,13 @@ class UserRepository {
         $this->connection = $conn->startConnection();
     }
 
-    public function setSession()
+    public function setSession($user)
     {
+        $role = $user->getRole();
+        $roleName = ($role == 1) ? "Admin" : "SimpleUser";
 
-        $_SESSION["role"] = 1;
-        $_SESSION['roleName'] = "Administrator";
-
-        $_SESSION["role"] = "0";
-        $_SESSION['roleName'] = "SimpleUser";
+        $_SESSION["role"] = $role;
+        $_SESSION['roleName'] =  $roleName;
     }
 
     function registerUser($user){
@@ -65,7 +64,7 @@ class UserRepository {
                 $loggedInUser['phonenumber'],
                 $loggedInUser['role'],
             );
-    
+
             if ($user->getRole() == 1) {
                 echo "<script> alert('Admin has logged in!'); </script>";
                 header("Location: dashboard.php");
