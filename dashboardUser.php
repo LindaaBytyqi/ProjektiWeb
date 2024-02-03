@@ -24,6 +24,7 @@ $simpleUsers = $userRepository->getSimpleUsers();
     <ul>
           <li><a href="dashboard.php">Home</a></li>
           <li><a href="dashboardUser.php">Users</a></li>
+          <li><a href="dashboardProducts.php">Products</a></li>
           <li><a href="logout.php"><button>Logout</button></a></li>
       </ul>
     </header>

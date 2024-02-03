@@ -34,6 +34,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 
 </head>
@@ -41,7 +42,7 @@
     <header>
     <ul>
         <li><a href="dashboard.php">Home</a></li>
-        <li><a href="dashboardUsers.php">Users</a></li>
+        <li><a href="dashboardUser.php">Users</a></li>
         <li><a href="dashboardProducts.php">Products</a></li>
         <li><a href="logout.php"><button class="butoni-logout">Logout</button></a></li>
       </ul>
@@ -76,6 +77,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Image</th>
+        <th>Delete</th>
         
     </tr>
     
@@ -92,6 +94,7 @@
             echo "<td>" . $product['name'] . "</td>";
             echo "<td>" . $product['price'] . "</td>";
             echo "<td><img src='" . $product['image'] . "' alt='" . $product['name'] . "' height='50px' width='50px'></td>";
+            echo "<td><a class='delete-link' href='deleteProduct.php?id=" . $product['id'] . "'>Delete</a></td>";
             echo "</tr>";
         }
         
