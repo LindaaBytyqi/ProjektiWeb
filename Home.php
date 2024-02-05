@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if(!isset($_SESSION["name"])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +32,7 @@
                     <li><a href="product.php">Products</a></li>
                     <li><a href="News.php">News</a></li>
                     <li><a href="contactus.php">Contact</a></li>
-                    <a href="login.php"><button class="Loginbtn">Log in</button></a>
+                    <a href="logout.php"><button class="Loginbtn">Log out</button></a>
                     <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
                 </span>
                 <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>

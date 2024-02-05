@@ -13,7 +13,13 @@ if(isset($_POST['loginbtn'])){
         $user  = new User($id,$name,null,$password,null, 0);
         $userRepository = new UserRepository();
 
-        $userRepository->logUser($name, $password);
+        if ($user) {
+            $_SESSION["name"] = $name;
+            $_SESSION["password"] = $password;
+            $_SESSION["role"] = $user->getRole();
+            
+            $userRepository->logUser($name, $password);
+        }
     }
 }
 ?>
