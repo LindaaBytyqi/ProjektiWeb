@@ -1,3 +1,23 @@
+<?php
+include_once 'productsRepository.php';
+
+$productsRepo = new ProductsRepository;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["add_product"])) {
+        $newProduct = new Product($_POST["id"],$_POST["image"],$_POST["name"],$_POST["price"]);
+
+        $productsRepo->insertProduct($newProduct);
+
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+}
+
+$allProducts = $productsRepo->getAllProducts();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -120,6 +140,25 @@
 
     
     </div>
+
+    <div class="container">
+    <?php foreach ($allProducts as $product): ?>
+        <div class="product"style="padding-bottom: 150px;">
+            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" style="max-width: 100%; height: 100%; padding:5px;">
+            <h4><?php echo $product['name']; ?></h4>
+            <p class="price"><?php echo '$' . $product['price']; ?></p>
+
+            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <input type="hidden" name="id" value="<?php echo $product['id']; ?>">
+                <input type="hidden" name="image" value="<?php echo $product['image']; ?>">
+                <input type="hidden" name="name" value="<?php echo $product['name']; ?>">
+                <input type="hidden" name="price" value="<?php echo $product['price']; ?>">
+                <button type="hidden" name="add_product" class="add-to-cart">Shop now</button>
+            </form>
+        </div>
+    <?php endforeach; ?>
+    </div>
+
     
     <section class="footer">
         <div class="title-text">
