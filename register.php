@@ -14,8 +14,8 @@
         <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="form">
             <h1>Register</h1>
             <div class="box">
-                Full Name <input type="text" id="name" name="name">
-                <label style="color: blueviolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="name" id="nameError"></label>
+                Full Name <input type="text" id="name" name="name"><label style="color: bluev
+                iolet; font-family: 'Poppins', serif;; font-size: 14.5px;" for="name" id="nameError"></label>
             </div>
             <div class="box">
                 Email <input type="email" id="email" name="email">

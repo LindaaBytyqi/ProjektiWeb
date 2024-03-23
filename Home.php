@@ -119,11 +119,6 @@ if(!isset($_SESSION["name"])) {
                 <button class="add-to-cart">Shop now</button>
             </div>
         
-           
-        
-           
-           
-        
         </div>
     </section>
 

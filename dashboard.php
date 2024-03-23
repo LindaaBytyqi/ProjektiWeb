@@ -18,16 +18,18 @@ if(!isset($_SESSION["name"])) {
 
 </head>
 <body>
-    <header>
+<div class="sidebar">
+    <h2>Dashboard</h2>
     <ul>
-        <li><a href="dashboard.php">Home</a></li>
-        <li><a href="dashboardUser.php">Users</a></li>
-        <li><a href="dashboardProducts.php">Products</a></li>
-        <li><a href="logout.php"><button class="butoni-logout">Logout</button></a></li>
-      </ul>
-    </header>
-
-    <h1 class="welcome">Welcome to Dashboard !</h1>;
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="login.html"><button class="loginbtn">Log Out</button></a></li>
+    </ul>
+  </div>
+  <div class="content">
+      <h3>Dashboard Of Rossi BabyToys</h3>
+  </div>
 
 </body>
 </html>
